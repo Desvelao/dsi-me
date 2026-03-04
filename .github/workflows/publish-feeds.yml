@@ -1,0 +1,53 @@
+
+name: Build and publish feeds.rss
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build_feed:
+    uses: Desvelao/dsipy/.github/workflows/gha-build-feeds.yml@main
+    with:
+      wheel_tag: "v0.0.1-alpha1"
+      source_dir: "feeds"
+      feeds_file: "feeds.rss"
+    secrets:
+      wheel_repo_token: ${{ secrets.WHEEL_REPO_TOKEN }}
+      feeds_title: ${{ secrets.FEEDS_TITLE }}
+      feeds_description: ${{ secrets.FEEDS_DESCRIPTION }}
+      feeds_author: ${{ secrets.FEEDS_AUTHOR }}
+      feeds_email: ${{ secrets.FEEDS_EMAIL }}
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build_feed
+    steps:
+      - name: Download generated feed artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.build_feed.outputs.artifact_name }}
+          path: artifact
+
+      - name: Prepare Pages artifact directory
+        run: |
+          set -euo pipefail
+          mkdir -p public
+          cp "artifact/${{ needs.build_feed.outputs.feeds_file }}" "public/${{ needs.build_feed.outputs.feeds_file }}"
+          touch public/.nojekyll
+
+      - name: Publish to gh-pages (keep existing files)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: public
+          keep_files: true
