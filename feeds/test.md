@@ -1,0 +1,11 @@
+---
+title: test HTML
+date: 2026-03-06T00:36:48Z
+---
+
+<![CDATA[
+<p>Este es un texto con <strong>negrita</strong>.</p>
+<p><img alt="Imagen" src="https://images2.alphacoders.com/479/thumb-350-479565.webp" /></p>
+<p>Más info en <a href="https://ejemplo.com">mi web</a>.</p>
+]]>
+
