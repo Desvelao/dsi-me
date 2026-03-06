@@ -20,6 +20,7 @@ jobs:
       wheel_tag: "v0.0.1-alpha1"
       source_dir: "feeds"
       feeds_file: "feeds.rss"
+      command_args: '--var feeds_source_base_url="https://github.com/Desvelao/dsi-me/tree/main"'
     secrets:
       wheel_repo_token: ${{ secrets.WHEEL_REPO_TOKEN }}
       feeds_title: ${{ secrets.FEEDS_TITLE }}
