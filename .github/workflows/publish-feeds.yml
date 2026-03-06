@@ -26,6 +26,7 @@ jobs:
       feeds_description: ${{ secrets.FEEDS_DESCRIPTION }}
       feeds_author: ${{ secrets.FEEDS_AUTHOR }}
       feeds_email: ${{ secrets.FEEDS_EMAIL }}
+      feeds_vars:  ${{ secrets.FEEDS_VARS }}
 
   publish:
     runs-on: ubuntu-latest
