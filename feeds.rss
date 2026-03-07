@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antonio Gutiérrez DSI feeds</title><link>https://desvelao.github.io/dsi-me/feeds.rss</link><description>The adventures and stories of Antonio Gutiérrez</description><language>en-US</language><lastBuildDate>Sat, 07 Mar 2026 11:20:18 GMT</lastBuildDate><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><atom:link href="https://desvelao.github.io/dsi-me/feeds.rss" rel="self"></atom:link><item><title>test HTML</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/test2.md</link><description><![CDATA[<p>Este es un texto con <strong>negrita</strong>.</p>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Antonio Gutiérrez DSI feeds</title><link>https://desvelao.github.io/dsi-me/feeds.rss</link><description>The adventures and stories of Antonio Gutiérrez</description><language>en-US</language><lastBuildDate>Sat, 07 Mar 2026 15:20:10 GMT</lastBuildDate><generator>rfeed v1.1.1</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><atom:link href="https://desvelao.github.io/dsi-me/feeds.rss" rel="self"></atom:link><item><title>Test variable interpolation</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/test2.md</link><description><![CDATA[<h1>Markdown Features Sample</h1>
+<h2>Headings</h2>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<h2>Emphasis</h2>
+<ul>
+<li><em>Italic</em></li>
+<li><strong>Bold</strong></li>
+<li><strong><em>Bold &amp; Italic</em></strong></li>
+<li>~~Strikethrough~~</li>
+</ul>
+<h2>Lists</h2>
+<h3>Unordered List</h3>
+<ul>
+<li>Item A</li>
+<li>Item B</li>
+<li>Nested item</li>
+</ul>
+<h3>Ordered List</h3>
+<ol>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ol>
+<h2>Links</h2>
+<p><a href="https://www.microsoft.com">Microsoft</a></p>
+<h2>Images</h2>
+<p><img alt="Alt text" src="image-url" /></p>
+<h2>Code</h2>
+<p>Inline code: <code>print("Hello")</code></p>
+<p>Code block:
+<code>python
+def greet():
+  return "Hello"</code></p>
+<h2>Blockquotes</h2>
+<blockquote>
+<p>This is a blockquote.</p>
+</blockquote>
+<h2>Tables</h2>
+<p>| Product | Price | Stock |
+|---------|--------|--------|
+| Pen     | 1€     | Yes    |
+| Notebook| 3€     | No     |</p>
+<h2>Horizontal Rule</h2>
+<hr />
+<h2>Task Lists</h2>
+<ul>
+<li>[x] Add markdown features</li>
+<li>[ ] Review</li>
+<li>[ ] Finalize</li>
+</ul>
+<h2>Escaping Characters</h2>
+<p>Use <code>\*</code> to show a literal asterisk.</p>
+<h2>Footnotes</h2>
+<p>Here is a sentence with a footnote.[^1]</p>
+<p>[^1]: This is the footnote text.</p>
+<h2>Inline HTML</h2>
+<p>This is an inline HTML example.</p>
+
 <p><img alt="Image" src="https://images2.alphacoders.com/479/thumb-350-479565.webp" /></p>
 <p>Más info en <a href="https://ejemplo.com">mi web</a></p>
 <p>Testing template string:</p>
-<p>my_var: VAR from frontmatter</p>
+<p>my_var: VAR from metadata</p>
 <p>file_path: feeds/test2.md</p>
 <p>file_name: test2.md</p>
 <p>file_dir: feeds</p>
@@ -12,4 +74,4 @@
 <p>gh_owner: Desvelao</p>
 <p>gh_repo: dsi-me</p>
 <p>gh_pages_base_url: https://desvelao.github.io/dsi-me</p>
-<p>gh_repo_source_base_url: https://github.com/Desvelao/dsi-me/tree/main</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Fri, 06 Mar 2026 00:36:50 GMT</pubDate><guid isPermaLink="false">feeds-test2-md</guid><media:content url="https://images2.alphacoders.com/479/thumb-350-479565.webp" type="image/webp" medium="image"></media:content></item><item><title>Roshan, new home!</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/20241217211700.md</link><description><![CDATA[<p>Roshan, a Dota 2 Discord bot, got a new home after a long time. New interactions update v0.4.0-alpha1 is available in the development server.</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Tue, 17 Dec 2024 21:17:00 GMT</pubDate><guid isPermaLink="false">feeds-20241217211700-md</guid></item><item><title>Hi world!</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/20240501192310.md</link><description><![CDATA[<p>Hello world!</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Wed, 01 May 2024 19:23:10 GMT</pubDate><guid isPermaLink="false">feeds-20240501192310-md</guid></item></channel></rss>
+<p>gh_repo_source_base_url: https://github.com/Desvelao/dsi-me/tree/main</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Fri, 06 Mar 2026 16:18:50 GMT</pubDate><guid isPermaLink="false">feeds-test2-md</guid><media:content url="https://images2.alphacoders.com/479/thumb-350-479565.webp" type="image/webp" medium="image"></media:content></item><item><title>Roshan, new home!</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/20241217211700.md</link><description><![CDATA[<p>Roshan, a Dota 2 Discord bot, got a new home after a long time. New interactions update v0.4.0-alpha1 is available in the development server.</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Tue, 17 Dec 2024 21:17:00 GMT</pubDate><guid isPermaLink="false">feeds-20241217211700-md</guid></item><item><title>Hi world!</title><link>https://github.com/Desvelao/dsi-me/tree/main/feeds/20240501192310.md</link><description><![CDATA[<p>Hello world!</p>]]></description><author>Antonio Gutierrez (iamdesvelao@gmail.com)</author><pubDate>Wed, 01 May 2024 19:23:10 GMT</pubDate><guid isPermaLink="false">feeds-20240501192310-md</guid></item></channel></rss>
