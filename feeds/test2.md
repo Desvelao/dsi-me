@@ -1,5 +1,5 @@
 ---
-title: Test variable interpolation
+title: markdown support and test variable interpolation
 date: 2026-03-06T16:18:50Z
 link: {{ gh_repo_source_base_url }}/{{ file_path }}
 use_html_content: yes
